@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <button @click="goHomeHandler">Home</button>
-    <button @click="goSignupHandler">Signup</button>
-    <button @click="goLoginHandler">Login</button>
+
   </div>
 </template>
 

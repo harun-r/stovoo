@@ -18,9 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-    .main{
-      p{
-        font-size: 20px;
-      }
-    }
+
+@import "./assets/scss/app.scss";
 </style>
