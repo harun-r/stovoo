@@ -12,8 +12,17 @@
               v-show="isModalVisible"
               @close="closeModal">
             <template v-slot:body>
-             <div class="modal">
-               ddfd
+             <div class="modal-wrap">
+               <div class="video-wrap">
+                 <video id="videoElement"
+                        controls="true"
+                        @canplay="updatePaused"
+                        @playing="updatePaused"
+                        @pause="updatePaused"
+                 >
+                   <source src="@/assets/video/video.mp4" type="video/mp4">
+                 </video>
+               </div>
                <button
                    type="button"
                    class="btn-close"
@@ -85,22 +94,37 @@ export default {
   name: "HomeHero",
   components:{
     RadialProgressBar,
-    Modal
+    Modal,
   },
   data: function () {
     return{
       completedSteps: 50,
       totalSteps: 100,
       isModalVisible: false,
+      videoElement: null,
+      paused: null
     }
   },
   methods: {
     showModal() {
       this.isModalVisible = true;
+      this.videoElement.play();
     },
     closeModal() {
       this.isModalVisible = false;
-    }
+      this.videoElement.pause();
+    },
+    updatePaused(event) {
+      this.videoElement = event.target;
+      this.paused = event.target.paused;
+    },
+
+  },
+  computed: {
+    videoElement () {
+      return this.$refs.video;
+    },
+    playing() { return !this.paused; }
   }
 }
 </script>
