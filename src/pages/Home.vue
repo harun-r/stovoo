@@ -36,6 +36,7 @@
     />
     <FunFact/>
     <Testimonials/>
+    <Questions/>
   </div>
 </template>
 
@@ -45,7 +46,7 @@ import HomeHero from "@/components/HomeHero/HomeHero";
 import ContentShowcase from "@/components/ContentShowcase/ContentShowcase";
 import FunFact from "@/components/FunFact/FunFact";
 import Testimonials from "@/components/Testimonials/Testimonials";
-
+import Questions from "@/components/Questions/Questions";
 export default {
   name: "Home",
   components:{
@@ -53,7 +54,8 @@ export default {
     HomeHero,
     ContentShowcase,
     FunFact,
-    Testimonials
+    Testimonials,
+    Questions
   },
   methods:{
 

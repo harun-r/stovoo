@@ -324,3 +324,42 @@
     }
   }
 }
+
+//question-area
+.question-area{
+  padding: 100px 0;
+  .title{
+    margin-bottom: 30px;
+    h3{
+      @include font-size(48);
+      font-family: $Satoshi-Bold;
+      color: $black;
+      margin-bottom: 15px;
+      @media (max-width: 768px) {
+        @include font-size(24);
+      }
+    }
+  }
+  .question-ans{
+    .c-accordion {
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+    .c-accordion .c-accordion__item {
+      border-bottom: 1px solid  #ddd;
+    }
+    .c-accordion .c-accordion__item.-active .c-accordion__title {
+      background-color: transparent;
+    }
+    .c-accordion__title {
+      padding: 1rem  0;
+      font-size: 16px;
+      color: $black;
+      font-family: $Satoshi-Bold;
+    }
+    .c-accordion__content {
+      border-top: none;
+      padding: 0.5rem 0;
+    }
+  }
+}
