@@ -37,6 +37,7 @@
     <FunFact/>
     <Testimonials/>
     <Questions/>
+    <Footer/>
   </div>
 </template>
 
@@ -47,6 +48,7 @@ import ContentShowcase from "@/components/ContentShowcase/ContentShowcase";
 import FunFact from "@/components/FunFact/FunFact";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import Questions from "@/components/Questions/Questions";
+import Footer from "@/components/Footer/Footer";
 export default {
   name: "Home",
   components:{
@@ -55,11 +57,10 @@ export default {
     ContentShowcase,
     FunFact,
     Testimonials,
-    Questions
+    Questions,
+    Footer
   },
-  methods:{
 
-  }
 }
 </script>
 

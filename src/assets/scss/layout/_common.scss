@@ -251,10 +251,17 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
+      padding: 35px 0;
+    }
     .item{
       width: 33.33%;
       @include display-center;
-
+      @media (max-width: 768px) {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 15px 0;
+      }
       h3{
         @include font-size(50);
         font-family: $Satoshi-Bold;
@@ -262,6 +269,9 @@
         margin-right: 20px;
         display: flex;
         align-items: center;
+        @media (max-width: 768px) {
+          @include font-size(24);
+        }
       }
       p{
         max-width: 180px;
@@ -362,4 +372,195 @@
       padding: 0.5rem 0;
     }
   }
+}
+
+//footer
+.footer{
+  background-color: $black;
+  padding: 100px 0 40px 0;
+  text-align: center;
+  color: $white;
+  .footer-top{
+    h3{
+      @include font-size(42);
+      font-family: $Satoshi-Bold;
+      margin-bottom: 15px;
+      @media (max-width: 768px) {
+        @include font-size(22);
+      }
+    }
+    p{
+      max-width: 60%;
+      margin: 0 auto;
+      @media  (max-width: 768px) {
+        max-width: 90%;
+      }
+    }
+    .footer-btn{
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        margin: 0 15px;
+        text-decoration: none;
+        color: $white;
+      }
+      @media  (max-width: 768px) {
+        a{
+          width: 120px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer-center{
+    margin-top: 130px;
+    p{
+      max-width: 400px;
+      margin: 15px auto;
+      @media  (max-width: 768px) {
+        max-width: 90%;
+      }
+    }
+    ul{
+      margin-top: 20px;
+      li{
+        display: inline-block;
+        margin: 0 5px;
+        a{
+          display: block;
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+    .logo-f{
+      @media  (max-width: 768px) {
+        width: 120px;
+      }
+    }
+  }
+  .footer-inner{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+      display: inline-block;
+      text-decoration: none;
+      color: $white;
+      margin: 0 15px;
+    }
+  }
+}
+
+//form-box
+.form-box{
+  .head{
+    margin-bottom: 40px;
+    h3{
+      @include font-size(42);
+      font-family: $Satoshi-Bold;
+      color: $black;
+      @media (max-width: 768px) {
+        @include font-size(22);
+      }
+    }
+  }
+}
+.form-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 60px;
+  button{
+    margin-bottom: 30px;
+    background-color: transparent;
+  }
+  a{
+    text-decoration: none;
+    font-family: $Satoshi-Bold;
+  }
+}
+.create-account{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  .close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    z-index: 9;
+    img{
+      width: 32px;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: row-reverse;
+  }
+  .content,
+  .video-bg{
+    width: 50%;
+  }
+  .content{
+    padding: 100px;
+    @media (max-width: 768px) {
+      padding: 50px 15px;
+    }
+  }
+  .video-bg{
+    background-color: #333;
+    height: 100vh;
+    display: block;
+    video{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.box-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  .center-box{
+    background-color: $white;
+    padding: 50px;
+    width: 600px;
+    max-width: 96%;
+
+    @media (max-width: 768px) {
+      padding: 30px;
+    }
+  }
+}
+.digit-boxes{
+  display: flex;
+  align-items: center;
+
+  .digit-box{
+    @include size(80px,64px);
+    border-radius: 5px;
+    border: 1px solid $gray;
+    margin: 0 10px 0 0;
+    font-size: 32px;
+    text-align: center;
+    &.success{
+     border-color: #00A759;
+    }
+    &.error{
+      border-color: #E93939;
+    }
+  }
+}
+.hint{
+  margin-top: 20px;
 }

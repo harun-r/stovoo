@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from "@/pages/Home";
 import Signup from "@/pages/Signup";
 import Login from "@/pages/Login";
+import VerifyEmail from "@/pages/VerifyEmail";
 
 const routes = [
     {
@@ -20,6 +21,11 @@ const routes = [
         path: '/signup',
         name: 'Signup',
         component: Signup
+    },
+    {
+        path: '/verify-email',
+        name: 'verifyEmail',
+        component: VerifyEmail
     }
 ]
 
