@@ -1,25 +1,18 @@
 <template>
   <div class="home">
-
+    <Header/>
   </div>
 </template>
 
 <script>
+import Header from "@/components/Header/Header";
 export default {
   name: "Home",
   components:{
-
+    Header
   },
   methods:{
-    goHomeHandler() {
-      this.$router.push('/')
-    },
-    goSignupHandler(){
-      this.$router.push('/signup')
-    },
-    goLoginHandler(){
-      this.$router.push('/login')
-    }
+
   }
 }
 </script>
