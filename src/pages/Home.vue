@@ -35,6 +35,7 @@
         :desc="'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dia m nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.'"
     />
     <FunFact/>
+    <Testimonials/>
   </div>
 </template>
 
@@ -43,6 +44,7 @@ import Header from "@/components/Header/Header";
 import HomeHero from "@/components/HomeHero/HomeHero";
 import ContentShowcase from "@/components/ContentShowcase/ContentShowcase";
 import FunFact from "@/components/FunFact/FunFact";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default {
   name: "Home",
@@ -50,7 +52,8 @@ export default {
     Header,
     HomeHero,
     ContentShowcase,
-    FunFact
+    FunFact,
+    Testimonials
   },
   methods:{
 
