@@ -1,12 +1,29 @@
 <template>
+
   <div class="home-hero">
     <div class="container">
       <div class="home-hero-inner">
         <div class="video">
           <img src="@/assets/images/video-bg.png" alt="video">
-          <button class="video-play">
+          <button @click="showModal" class="video-play">
             <img src="@/assets/images/play.png" alt="video">
           </button>
+          <Modal
+              v-show="isModalVisible"
+              @close="closeModal">
+            <template v-slot:body>
+             <div class="modal">
+               ddfd
+               <button
+                   type="button"
+                   class="btn-close"
+                   @click="closeModal"
+               >
+                 <img src="@/assets/images/close.png" alt="close">
+               </button>
+             </div>
+            </template>
+          </Modal>
         </div>
         <div class="info">
               <radial-progress-bar :diameter="64"
@@ -63,15 +80,26 @@
 
 <script>
 import RadialProgressBar from 'vue-radial-progress'
+import Modal from "@/components/Modal/Modal";
 export default {
   name: "HomeHero",
   components:{
-    RadialProgressBar
+    RadialProgressBar,
+    Modal
   },
   data: function () {
     return{
       completedSteps: 50,
       totalSteps: 100,
+      isModalVisible: false,
+    }
+  },
+  methods: {
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
     }
   }
 }
