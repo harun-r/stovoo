@@ -1,0 +1,96 @@
+.home-hero{
+  .home-hero-inner{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    .video{
+      position: relative;
+      order: 2;
+      @include size(50%,calc(100vh - 104px));
+      border-radius: 0 0 15px 15px;
+      overflow: hidden;
+      img{
+        @include size(100%,100%);
+        object-fit: cover;
+        object-position: center;
+      }
+      .video-play{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: transparent;
+      }
+    }
+    .info{
+      order: 3;
+      position: absolute;
+      right: -80px;
+      top: 0;
+      padding-top: 40px;
+      .radial-progress-inner{
+        width: 54px !important;
+        height: 54px;
+        border-radius: 50%;
+        overflow: hidden;
+        top: 5px;
+        img{
+          @include size(100%,100%);
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .info-right{
+        margin-top: 40px;
+      }
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 30px;
+          text-align: center;
+          img{
+            @include size(48px,48px);
+          }
+          span{
+            display: block;
+            color: $primary;
+            @include font-size(16px);
+            font-family: $Satoshi-Medium;
+          }
+          a{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .content{
+      order: 1;
+      width: 50%;
+      padding-right: 100px;
+      h3{
+        @include font-size(48);
+        font-family: $Satoshi-Black;
+        color: $black;
+        margin-bottom: 30px;
+      }
+      .download-btn{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        .app{
+          margin-right: 15px;
+        }
+        button{
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@
     "node-sass": "^7.0.1",
     "sass-loader": "^12.6.0",
     "vue": "^3.2.13",
+    "vue-radial-progress": "^0.3.2",
     "vue-router": "^4.0.13"
   },
   "devDependencies": {
