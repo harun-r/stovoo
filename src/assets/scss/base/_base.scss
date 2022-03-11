@@ -9,4 +9,8 @@ body{
     line-height: 1.4;
     color: $gray;
     background-color: $gray-100;
+
+    @media (max-width: 768px) {
+      @include font-size(13);
+    }
 }

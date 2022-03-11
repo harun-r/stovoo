@@ -13,9 +13,11 @@
     "node-sass": "^7.0.1",
     "sass-loader": "^12.6.0",
     "vue": "^3.2.13",
+    "vue-js-counter": "^1.0.3",
     "vue-radial-progress": "^0.3.2",
     "vue-router": "^4.0.13",
-    "vue-video-player-vjs": "^1.1.2"
+    "vue-video-player-vjs": "^1.1.2",
+    "vue-visibility-sensor": "^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
