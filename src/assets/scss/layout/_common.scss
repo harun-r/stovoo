@@ -33,6 +33,7 @@
         object-position: center;
       }
       .video-play{
+        @include size(70px,70px);
         position: absolute;
         left: 50%;
         top: 50%;
@@ -329,10 +330,18 @@
     padding: 30px;
     margin: 0 20px;
     text-align: left;
+    border-radius: 15px;
     @media (max-width: 768px) {
       margin: 0;
     }
-
+    .avatar{
+      width: 90px;
+      height: 90px;
+      margin-bottom: 10px;
+      img{
+        width: 100%;
+      }
+    }
     h3{
       font-size: 18px;
       font-family: $Satoshi-Medium;
@@ -369,7 +378,7 @@
       background-color: transparent;
     }
     .c-accordion__title {
-      padding: 1rem  0;
+      padding: 1.5rem  0;
       font-size: 16px;
       color: $black;
       font-family: $Satoshi-Bold;
@@ -383,7 +392,7 @@
 
 //footer
 .footer{
-  background-color: $black;
+  background-color: #000;
   padding: 100px 0 40px 0;
   text-align: center;
   color: $white;
@@ -412,6 +421,10 @@
         margin: 0 15px;
         text-decoration: none;
         color: $white;
+        width: 150px;
+        img{
+          width: 100%;
+        }
       }
       @media  (max-width: 768px) {
         a{
@@ -445,9 +458,7 @@
       }
     }
     .logo-f{
-      @media  (max-width: 768px) {
-        width: 120px;
-      }
+      width: 150px;
     }
   }
   .footer-inner{
@@ -455,6 +466,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (min-width: 991px) {
+      max-width: 70%;
+      margin: 40px auto auto auto;
+    }
     a{
       display: inline-block;
       text-decoration: none;
@@ -468,6 +483,7 @@
 .form-box{
   .head{
     margin-bottom: 40px;
+    text-align: center;
     h3{
       @include font-size(42);
       font-family: $Satoshi-Bold;
@@ -494,6 +510,7 @@
   a{
     text-decoration: none;
     font-family: $Satoshi-Bold;
+    color:$black
   }
 }
 .create-account{
