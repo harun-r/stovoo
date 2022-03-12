@@ -1,0 +1,78 @@
+.form-input{
+  border: 1px solid #DEDEE3;
+  border-radius: 10px;
+  height: 72px;
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  label{
+    font-size: 16px;
+    font-family: $Satoshi-Bold;
+    color: #282828;
+    display: block;
+  }
+  input{
+    width: 100%;
+    border: none;
+    background: transparent;
+    &:focus{
+      outline: 0;
+    }
+  }
+  .icon{
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    cursor: pointer;
+  }
+
+  .has-dropdown{
+    display: flex;
+    align-items: center;
+    .dropdown{
+      padding-right: 30px;
+      margin-right: 10px;
+      border-right: 1px solid #DEDEE3;
+      position: relative;
+      cursor: pointer;
+      &:after{
+        content: '';
+        background-image: url("./assets/images/arrow-bottom.png");
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px;
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+      }
+    }
+  }
+}
+input{
+  &:focus{
+    outline: 0;
+  }
+}
+.checkbox-wrap{
+  display: flex;
+  align-items: flex-start;
+  label{
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+.form-half{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  .form-input{
+    width: 48%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
