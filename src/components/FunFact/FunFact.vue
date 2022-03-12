@@ -22,13 +22,12 @@
 </template>
 
 <script>
-const VisibilitySensor = require('vue-visibility-sensor');
 import VueJsCounter from 'vue-js-counter'
 export default {
   name: "FunFact",
   components:{
     VueJsCounter,
-    VisibilitySensor
+
   },
   methods:{
     onChange(){

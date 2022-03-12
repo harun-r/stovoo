@@ -1,3 +1,10 @@
+.home{
+  margin-top: 104px;
+  @media (max-width: 768px) {
+    margin-top: 68px;
+  }
+}
+
 .home-hero{
   @media (max-width: 768px) {
     .container{

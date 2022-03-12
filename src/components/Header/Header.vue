@@ -15,10 +15,10 @@
         <div class="menu-right" :class="{ active: showMobileMenu }">
           <ul>
             <li>
-              <router-link to="/">Our brief</router-link>
+              <a class="active" href="#" v-scroll-to="'#our-brief'">Our brief</a>
             </li>
             <li>
-              <router-link to="/fd">Contact</router-link>
+              <a href="#" v-scroll-to="'#contact'">Contact</a>
             </li>
           </ul>
           <div class="header-btn">
@@ -34,6 +34,7 @@
 <script>
 export default {
   name: "Header",
+
   data: function () {
     return{
       showMobileMenu: false
@@ -48,6 +49,12 @@ export default {
     },
     menuHandler(){
       this.showMobileMenu = !this.showMobileMenu;
+    },
+    goto(refName) {
+      var element = this.$refs[refName];
+      var top = element.offsetTop;
+
+      window.scrollTo(0, top);
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="content-showcase-wrap">
+  <div class="content-showcase-wrap" id="our-brief">
     <div class="container">
       <div class="content-inner bg-yellow" :class="bgColor">
         <div class="cover" :class="secOrder">

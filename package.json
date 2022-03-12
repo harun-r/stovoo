@@ -20,6 +20,7 @@
     "vue-radial-progress": "^0.3.2",
     "vue-responsive-video-background-player": "^2.2.0",
     "vue-router": "^4.0.13",
+    "vue-scrollto": "^2.20.0",
     "vue-video-player-vjs": "^1.1.2",
     "vue-visibility-sensor": "^0.3.0",
     "vue3-carousel": "^0.1.36"

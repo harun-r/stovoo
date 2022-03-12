@@ -2,7 +2,11 @@
   background-color: $white;
   box-shadow: 0 3px 36px rgba(0,0,0,.16);
   height: 104px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
   @media  (max-width: 768px) {
     height: auto;
     padding: 15px 0;

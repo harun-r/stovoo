@@ -53,13 +53,13 @@
               <li>
                 <router-link to="/">
                   <img src="@/assets/images/icons/heart.png" alt="video">
-                  <span>56</span>
+                  <span><VueJsCounter end="56"/></span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/">
                   <img src="@/assets/images/icons/hand.png" alt="video">
-                  <span>12</span>
+                  <span><VueJsCounter end="22"/></span>
                 </router-link>
               </li>
               <li>
@@ -90,11 +90,13 @@
 <script>
 import RadialProgressBar from 'vue-radial-progress'
 import Modal from "@/components/Modal/Modal";
+import VueJsCounter from 'vue-js-counter'
 export default {
   name: "HomeHero",
   components:{
     RadialProgressBar,
     Modal,
+    VueJsCounter,
   },
   data: function () {
     return{
