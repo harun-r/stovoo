@@ -5,7 +5,11 @@
       <div class="home-hero-inner">
         <div class="video">
           <img src="@/assets/images/video-bg.png" alt="video">
-          <button @click="showModal" class="video-play">
+          <button
+              data-aos="fade-in"
+              data-aos-duration="3000"
+              data-aos-offset="200px"
+              @click="showModal" class="video-play">
             <img src="@/assets/images/play.png" alt="video">
           </button>
           <Modal
@@ -35,34 +39,40 @@
           </Modal>
         </div>
         <div class="info">
-              <radial-progress-bar :diameter="64"
-                                   :strokeWidth="4"
-                                   :innerStrokeWidth="4"
-                                   :startColor="'#FF8906'"
-                                   :stopColor="'#FF8906'"
-                                   :innerStrokeColor="'#ffffff'"
-                                   :completed-steps="completedSteps"
-                                   :total-steps="totalSteps">
+              <radial-progress-bar
+
+                  data-aos="fade-in"
+                  data-aos-duration="3000"
+                  data-aos-offset="200px"
+
+                  :diameter="64"
+                                           :strokeWidth="4"
+                                           :innerStrokeWidth="4"
+                                           :startColor="'#FF8906'"
+                                           :stopColor="'#FF8906'"
+                                           :innerStrokeColor="'#ffffff'"
+                                           :completed-steps="completedSteps"
+                                           :total-steps="totalSteps">
                 <img src="@/assets/images/video-bg.png" alt="video">
               </radial-progress-bar>
           <div class="info-right">
             <ul>
-              <li>
+              <li data-aos="slide-up" data-aos-duration="1000">
                 <router-link to="/"><img src="@/assets/images/icons/video.png" alt="video"></router-link>
               </li>
-              <li>
+              <li data-aos="slide-up" data-aos-duration="1500">
                 <router-link to="/">
                   <img src="@/assets/images/icons/heart.png" alt="video">
                   <span><VueJsCounter end="56"/></span>
                 </router-link>
               </li>
-              <li>
+              <li data-aos="slide-up" data-aos-duration="2000">
                 <router-link to="/">
                   <img src="@/assets/images/icons/hand.png" alt="video">
                   <span><VueJsCounter end="22"/></span>
                 </router-link>
               </li>
-              <li>
+              <li data-aos="slide-up" data-aos-duration="2500">
                 <router-link to="/">
                   <img src="@/assets/images/icons/rosun.png" alt="video">
                 </router-link>
@@ -71,13 +81,17 @@
           </div>
         </div>
         <div class="content">
-          <h3>Order great Foods and much more!</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dia m nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed </p>
+          <h3
+              data-aos="fade-in"
+              data-aos-duration="3000"
+              data-aos-offset="200px"
+          >Order great Foods and much more!</h3>
+          <p data-aos="slide-up" data-aos-duration="1500" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dia m nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed </p>
           <div class="download-btn">
-            <div class="app">
+            <div class="app" data-aos="slide-up" data-aos-duration="2000">
               <button><img src="@/assets/images/app.png" alt="app"></button>
             </div>
-            <div class="play">
+            <div class="play" data-aos="slide-up" data-aos-duration="3000">
               <button><img src="@/assets/images/google-play.png" alt="google-play"></button>
             </div>
           </div>

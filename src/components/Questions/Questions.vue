@@ -2,7 +2,7 @@
   <div class="question-area">
     <div class="container">
       <div class="title">
-        <h3>Frequently asked questions</h3>
+        <h3 data-aos="slide-up" data-aos-duration="2000">Frequently asked questions</h3>
       </div>
       <div class="question-ans">
         <Accordion

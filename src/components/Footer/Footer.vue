@@ -1,6 +1,10 @@
 <template>
     <div class="footer" id="contact">
-      <div class="footer-top">
+      <div class="footer-top"
+           data-aos="fade-in"
+           data-aos-duration="3000"
+           data-aos-offset="200px"
+      >
         <h3>Download and try it now</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero </p>
         <div class="footer-btn">
@@ -12,7 +16,11 @@
           </router-link>
         </div>
       </div>
-      <div class="footer-center">
+      <div class="footer-center"
+           data-aos="fade-in"
+           data-aos-duration="3000"
+           data-aos-offset="200px"
+      >
         <div>
           <img class="logo-f" src="@/assets/images/logo-white.png" alt="logo-white">
           <p> Limestone Road STE 200-C in Wilmington, DE 19808 hello@stovoo.com  +1 (302) 451-9589</p>
@@ -40,7 +48,11 @@
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom"
+           data-aos="fade-in"
+           data-aos-duration="3000"
+           data-aos-offset="200px"
+      >
         <div class="container">
           <div class="footer-inner">
             <p>© Copyright StoVoo Inc</p>

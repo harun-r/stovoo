@@ -2,8 +2,8 @@
   <div class="testimonial-section">
     <div class="container">
       <div class="testimonial-header">
-        <h3>Testimonials</h3>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, </p>
+        <h3 data-aos="slide-up" data-aos-duration="1000">Testimonials</h3>
+        <p data-aos="slide-up" data-aos-duration="2000">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, </p>
       </div>
     </div>
 
@@ -12,7 +12,7 @@
           :settings="settings"
       >
         <slide v-for="slide in 15" :key="slide">
-          <div class="item">
+          <div data-aos="slide-up" data-aos-duration="2000" class="item">
              <div class="avatar">
                  <img src="@/assets/images/avatar.png" alt="avatar">
              </div>
