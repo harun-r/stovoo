@@ -5,6 +5,8 @@ import Home from "@/pages/Home";
 import Signup from "@/pages/Signup";
 import Login from "@/pages/Login";
 import VerifyEmail from "@/pages/VerifyEmail";
+import VerifyNumber from "@/pages/VerifyNumber";
+import Success from "@/pages/Success";
 
 const routes = [
     {
@@ -26,6 +28,16 @@ const routes = [
         path: '/verify-email',
         name: 'verifyEmail',
         component: VerifyEmail
+    },
+    {
+        path: '/verify-number',
+        name: 'verifyNumber',
+        component: VerifyNumber
+    },
+    {
+        path: '/success',
+        name: 'Success',
+        component: Success
     }
 ]
 

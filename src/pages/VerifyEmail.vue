@@ -20,7 +20,7 @@
             </div>
           </div>
           <div class="form-footer">
-            <button class="btn-submit">
+            <button @click="goNext" class="btn-submit">
               <img src="@/assets/images/arrow-right.png" alt="arrow-right">
             </button>
             <p>
@@ -38,7 +38,12 @@
 
 <script>
 export default {
-  name: "VerifyEmail"
+  name: "VerifyEmail",
+  methods:{
+    goNext(){
+      this.$router.push('/verify-number')
+    }
+  }
 }
 </script>
 

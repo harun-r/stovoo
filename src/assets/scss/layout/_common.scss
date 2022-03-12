@@ -477,6 +477,9 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 60px;
+  @media (max-width: 768px) {
+    margin-top: 15px
+  }
   button{
     margin-bottom: 30px;
     background-color: transparent;
@@ -502,11 +505,14 @@
     }
   }
   @media (max-width: 768px) {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
   }
   .content,
   .video-bg{
     width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
   .content{
     padding: 100px;
@@ -518,6 +524,9 @@
     background-color: #333;
     height: 100vh;
     display: block;
+    @media (max-width: 768px) {
+      height: 250px;
+    }
     video{
       width: 100%;
       height: 100%;
@@ -529,13 +538,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  overflow-y: auto;
+  padding: 50px 0;
   .center-box{
     background-color: $white;
     padding: 50px;
     width: 600px;
     max-width: 96%;
+    height: auto;
 
     @media (max-width: 768px) {
       padding: 30px;
@@ -545,7 +557,7 @@
 .digit-boxes{
   display: flex;
   align-items: center;
-
+  justify-content: center;
   .digit-box{
     @include size(80px,64px);
     border-radius: 5px;
@@ -553,6 +565,10 @@
     margin: 0 10px 0 0;
     font-size: 32px;
     text-align: center;
+    @media (max-width: 768px) {
+      @include size(60px, 54px);
+      font-size: 22px;
+    }
     &.success{
      border-color: #00A759;
     }
@@ -563,4 +579,116 @@
 }
 .hint{
   margin-top: 20px;
+  text-align: center;
+}
+.country-dropdown{
+  display: none;
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 5rem;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  z-index: 9999;
+  background-color: $white;
+
+  &.active{
+    display: block;
+  }
+  ul{
+    li{
+      a{
+        color: $black;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        text-decoration: none;
+        font-family: $Satoshi-Medium;
+        img{
+          margin-right: 10px;
+          width: 24px;
+        }
+      }
+    }
+  }
+}
+.account-submit{
+  height: 72px;
+  width: 240px;
+  background-color: $primary !important;
+  color: $white;
+  font-size: 20px;
+  font-family:$Satoshi-Medium;
+  border: none;
+  border-radius: 5px;
+
+}
+
+//success-wrap
+.success-wrap{
+  background-image: url("./assets/images/bg-success.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+
+  .flex-start{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+  }
+  .box{
+    background-color: $primary;
+    padding: 50px;
+    max-width: 50%;
+    color: $white;
+    @media (max-width: 768px) {
+      padding: 30px;
+      max-width: 90%;
+    }
+
+    h3{
+      @include font-size(42);
+      font-family: $Satoshi-Bold;
+      color: $white;
+      @media (max-width: 768px) {
+        @include font-size(22);
+      }
+    }
+    .download-btn{
+      display: flex;
+      align-items: center;
+      margin: 30px 0 40px 0;
+      .app,
+      .play{
+        width: 120px;
+        img{
+          width: 100%;
+        }
+      }
+      button{
+        background-color: transparent;
+        margin-right: 15px;
+      }
+
+    }
+    a{
+      color: $white;
+      font-size: 20px;
+      display: block;
+      margin-bottom: 40px;
+    }
+    .logo{
+      width: 140px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
 }
