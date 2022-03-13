@@ -145,12 +145,12 @@
           <div class="form-input">
             <label>Password</label>
             <span class="icon"><img src="@/assets/images/hidden.png" alt="icon"></span>
-            <input type="text" placeholder="@ Richoco">
+            <input type="text" placeholder="************">
           </div>
           <div class="form-input">
             <label>Confirm password</label>
             <span class="icon"><img src="@/assets/images/hidden.png" alt="icon"></span>
-            <input type="text" placeholder="@ Richoco">
+            <input type="text" placeholder="************">
           </div>
           <div class="checkbox-wrap">
             <input id="checkbox" type="checkbox">

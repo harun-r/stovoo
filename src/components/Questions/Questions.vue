@@ -40,14 +40,6 @@ export default {
         {
           content: 'some other content',
           title: 'What is StoVoo'
-        },
-        {
-          content: 'some other content',
-          title: 'What is StoVoo'
-        },
-        {
-          content: 'some other content',
-          title: 'What is StoVoo'
         }
       ]
     }
