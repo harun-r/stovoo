@@ -84,7 +84,7 @@
           a{
             border-bottom: none;
             display: block;
-            border-left: 2px solid $primary;
+            border-bottom: 0;
             padding: 0 15px;
           }
         }
@@ -98,11 +98,10 @@
       }
       @media  (max-width: 768px) {
         flex-wrap: wrap;
-        justify-content: center;
         width: 100%;
         margin-top: 20px;
-        .btn-create-account{
-          margin-left: 10px;
+        button{
+          margin-left: 20px;
         }
       }
     }
