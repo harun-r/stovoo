@@ -4,9 +4,11 @@
       <div class="header-inner">
         <div class="bar">
           <router-link @click="menuHandler" to="/">
-            <img src="@/assets/images/bar.png" alt="bar"/>
+            <img v-if="!showMobileMenu" src="@/assets/images/bar.png" alt="bar"/>
+            <img v-else src="@/assets/images/close-2.png" alt="bar"/>
           </router-link>
         </div>
+
         <div class="logo">
           <router-link to="/">
             <img src="@/assets/images/logo.png" alt="stovoo"/>
