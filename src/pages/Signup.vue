@@ -31,9 +31,9 @@
         </div>
       </div>
       <div class="video-bg">
-        <video autoplay="true"
+        <video autoplay="true" loop
         >
-          <source src="@/assets/video/video-4.mp4" type="video/mp4">
+          <source src="@/assets/video/signup.mp4" type="video/mp4">
         </video>
       </div>
     </div>
